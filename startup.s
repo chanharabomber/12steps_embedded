@@ -3,7 +3,7 @@
     .global _start
 #   .type   _start,@fuction
 _start:
-    mov.l #0xffff00,sp
+    mov.l #_stack,sp
     jsr   @_main
 
 1:
